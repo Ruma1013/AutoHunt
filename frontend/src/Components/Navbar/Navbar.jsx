@@ -13,10 +13,10 @@ const [menu,setMenu] = useState("Home");
             <img src={logo} alt="" />
         </div>
         <ul className="nav-menu">
-            <li onClick={()=>{setMenu("Home")}}><Link to='/'>Home</Link>{menu==="Home"? <hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("Unregistered")}}><Link to='/Unregistered'>Unregistered</Link>{menu==="Unregistered"? <hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("Used")}}><Link to='/Used'>Used</Link>{menu==="Used"? <hr/>:<></>}</li>
-            <li onClick={()=>{setMenu("Valuation")}}><Link to='/Valuation'>Valuation</Link>{menu==="Valuation"? <hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("Home")}}><Link style={{ textDecoration: 'none'}} to='/'>Home</Link>{menu==="Home"? <hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("Unregistered")}}><Link style={{ textDecoration: 'none'}} to='/Unregistered'>Unregistered</Link>{menu==="Unregistered"? <hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("Used")}}><Link style={{ textDecoration: 'none'}} to='/Used'>Used</Link>{menu==="Used"? <hr/>:<></>}</li>
+            <li onClick={()=>{setMenu("Valuation")}}><Link style={{ textDecoration: 'none'}} to='/Valuation'>Valuation</Link>{menu==="Valuation"? <hr/>:<></>}</li>
         </ul>
         <div className="nav-login">
             <Link to='/login'><button>Login</button></Link>
