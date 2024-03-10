@@ -9,16 +9,10 @@ const Hero = () => {
     <div className ='hero'>
         <div className="hero-left">
             <p>Your dream car, just a click away.</p>
-        </div>
-     
-     <div className="hero-latest-btn">
-            <div className>Buy Products </div>
-        </div>
-
-       
+            <div className="hero-latest-btn"> Buy Now </div>
+            </div>
         <div className="hero-right">
             <img src={hero_image} alt=""/>
-
         </div>
       
     </div>
