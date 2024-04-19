@@ -1,10 +1,10 @@
-import React from 'react'
-import './Item.css'
+import React from 'react';
+import './Item.css';
 
-const Item = () => {
+const Item = (props) => {
   return (
     <div className='item'>
-        <img src={'props.image'} alt="" />
+        <img src={props.images} alt="Image"/>
         <p>{props.name}</p>
         <div className="item-prices">
             <div className="item-price-new">
@@ -13,10 +13,9 @@ const Item = () => {
             <div className="item-price-old">
                 {props.old_price}
             </div>
-
         </div>
     </div>
-  )
+  );
 }
 
-export default Item
+export default Item;
