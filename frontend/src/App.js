@@ -5,6 +5,7 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import ShopCategory from './Pages/ShopCategory';
 import LoginSignup from './Pages/LoginSignup';
 import Home from './Pages/Home';
+import Footer from './Components/Footer/Footer';
 import { Link } from 'react-router-dom';
 
 
@@ -24,7 +25,7 @@ function App() {
         <Route path="/login" element={<LoginSignup/>}/>
 
       </Routes>
-      
+      <Footer/>
 
       </BrowserRouter>
     </div>
