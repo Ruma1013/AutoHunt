@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+
 .hero{
     height: 90vh;
     background: white;
@@ -23,6 +26,7 @@
 }
 
 .hero-left p{
+    font-family: 'Montserrat', sans-serif;
     color: #171717;
     font-size: 60px;
     font-weight: 500;

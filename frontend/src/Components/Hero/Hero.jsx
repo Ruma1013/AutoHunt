@@ -8,7 +8,9 @@ const Hero = () => {
   return (
     <div className ='hero'>
         <div className="hero-left">
-            <p>Your dream car, just a click away.</p>
+            <p>YOUR DREAM CAR, JUST A CLICK AWAY..
+              
+            </p>
             <div className="hero-latest-btn"> Buy Now </div>
             </div>
         <div className="hero-right">
