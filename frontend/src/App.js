@@ -7,7 +7,8 @@ import LoginSignup from './Pages/LoginSignup';
 import Home from './Pages/Home';
 import Footer from './Components/Footer/Footer';
 import { Link } from 'react-router-dom';
-
+import unregistered_banner from './Components/Assets/Unregistered.png';
+import registered_banner from './Components/Assets/registered1.png';
 
 function App() {
   return (
@@ -16,9 +17,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/Unregistered" element={<ShopCategory category="Unregistered"/>}/>
-        <Route path="/Used" element={<ShopCategory category="Used"/>}/>
-        <Route path="/Valuation" element={<ShopCategory category= "Valuation"/>}/ >
+        <Route path="/Unregistered" element={<ShopCategory banner={unregistered_banner} category="Unregistered"/>}/>
+        <Route path="/Used" element={<ShopCategory banner={registered_banner} category="Used"/>}/>
         <Route path='product' element={<product/>}>
           <Route  path =':productId' element={<product/>} />
         </Route>
