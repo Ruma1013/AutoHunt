@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+/* Style for unregistered banner */
+.shop-category img {
+  width: 100%;
+}
