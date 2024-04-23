@@ -6,9 +6,8 @@ import ShopCategory from './Pages/ShopCategory';
 import LoginSignup from './Pages/LoginSignup';
 import Home from './Pages/Home';
 import Footer from './Components/Footer/Footer';
-import { Link } from 'react-router-dom';
-import unregistered_banner from './Components/Assets/Unregistered.png';
-import registered_banner from './Components/Assets/registered1.png';
+import unregistered_banner from './Components/Assets/Unregistered.svg';
+import registered_banner from './Components/Assets/registered2.svg';
 
 function App() {
   return (
@@ -18,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/Unregistered" element={<ShopCategory banner={unregistered_banner} category="Unregistered"/>}/>
-        <Route path="/Used" element={<ShopCategory banner={registered_banner} category="Used"/>}/>
+        <Route path="/Used" element={<ShopCategory banner={registered_banner} category="registered"/>}/>
         <Route path='product' element={<product/>}>
           <Route  path =':productId' element={<product/>} />
         </Route>
