@@ -5,8 +5,9 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import ShopCategory from './Pages/ShopCategory';
 import LoginSignup from './Pages/LoginSignup';
 import Home from './Pages/Home';
-import { Link } from 'react-router-dom';
-
+import Footer from './Components/Footer/Footer';
+import unregistered_banner from './Components/Assets/Unregistered.svg';
+import registered_banner from './Components/Assets/registered2.svg';
 
 function App() {
   return (
@@ -15,16 +16,15 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/Unregistered" element={<ShopCategory category="Unregistered"/>}/>
-        <Route path="/Used" element={<ShopCategory category="Used"/>}/>
-        <Route path="/Valuation" element={<ShopCategory category= "Valuation"/>}/ >
+        <Route path="/Unregistered" element={<ShopCategory banner={unregistered_banner} category="Unregistered"/>}/>
+        <Route path="/Used" element={<ShopCategory banner={registered_banner} category="registered"/>}/>
         <Route path='product' element={<product/>}>
           <Route  path =':productId' element={<product/>} />
         </Route>
         <Route path="/login" element={<LoginSignup/>}/>
 
       </Routes>
-      
+      <Footer/>
 
       </BrowserRouter>
     </div>
