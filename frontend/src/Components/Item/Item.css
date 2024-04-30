@@ -38,7 +38,7 @@
 
 .item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block; /* Ensure the image is treated as a block element */
     margin: 0 auto; /* Center the image horizontally within its container */
     align-content: center;
