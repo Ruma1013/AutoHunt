@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.car-form-container {
+    font-family: Poppins;
+    width: 580px;
+    height: auto;
+    background-color: rgb(191, 215, 237);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 40px 60px;
+    align-items: center;
+  }
+
+  .car-form-container h1{
+    font-family: Poppins;
+    text-align: center;
+    font-weight: 600;
+
+  }
+  
+  .car-form-fields {
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .car-form-label {
+    font-family: Poppins;
+    display: block;
+  }
+  
+  .car-form-input {
+    font-family: Poppins;
+    height: 72px;
+    width: calc(100% - 24px); /* Adjust the width to account for padding */
+    padding-left: 20px;
+    padding-right: 4px; /* Adjust padding to align with select arrow */
+    border: 1px solid snow;
+    outline: none;
+    color: rgb(14, 14, 14);
+    font-size: 18px;
+  }
+  
+  .car-form-submit-button {
+    font-family: Poppins;
+    height: 72px;
+    width: 96%;
+    color: aliceblue;
+    background-color: brown;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  
