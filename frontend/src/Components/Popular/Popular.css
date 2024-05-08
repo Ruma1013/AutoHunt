@@ -7,7 +7,7 @@
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     gap: 10px;
-    height: 90vh;
+    height: 120vh;
   }
   
   .popular {
@@ -50,5 +50,6 @@
     border: 2px solid #ccc; /* Border style for each image box */
     border-radius: 8px; /* Border radius for each image box */
     padding: 10px; /* Padding inside each image box */
+
   }
   
