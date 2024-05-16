@@ -9,6 +9,7 @@ import unregistered_banner from './Components/Assets/Unregistered.svg';
 import registered_banner from './Components/Assets/registered2.svg';
 import Product from './Pages/product'; // Import the Product component
 import Valuation from './Pages/valuation';
+import Login from './Pages/Login';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
           <Route path="/Used" element={<ShopCategory banner={registered_banner} category="registered" />} />
           {/* Corrected route setup for Product */}
           <Route path='/product/:productId' element={<Product />} />
-          <Route path="/login" element={<LoginSignup />} />
+          <Route path="/signup" element={<LoginSignup />} />
           <Route path='/valuation' element={<Valuation />} />
+          <Route path='/login' element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>
