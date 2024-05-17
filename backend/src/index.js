@@ -1,26 +1,21 @@
+require("dotenv").config(); // Ensure dotenv is loaded first
+console.log("DB Connection String:", process.env.DB); // Log DB connection string
 const express = require('express');
+const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
+const connection = require("./db");
+const userRoutes = require('./routes/users');
+const authRoutes = require('./routes/auth');
 
-const signupRoutes = require('./routes/signupRoutes');
-const indexRoutes = require('./routes/indexRoutes');
+// Connect to the database
+connection();
 
-const app = express();
-const PORT = 3000; // or any port you prefer
-
-// MongoDB connection
-mongoose.connect('mongodb+srv://shankavisal:shankavisal@cluster0.mvsfcc1.mongodb.net/A', { useNewUrlParser: true, useUnifiedTopology: true });
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-db.once('open', function () {
-    console.log('Connected to MongoDB');
-});
-
-app.use(cors());
 // Middleware
 app.use(bodyParser.json());
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
@@ -28,10 +23,15 @@ app.use(express.static('public'));
 app.use(express.static(path.join(__dirname, '..', 'frontend', 'build')));
 
 // Use routes
-app.use('/', indexRoutes);
-app.use('/api', signupRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/auth", authRoutes);
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something went wrong!');
 });
+
+// Start the server
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on port ${port}...`));
