@@ -1,28 +1,49 @@
-// WEB_PROJECT/routes/carValuationRoutes.js
-
 const express = require('express');
 const router = express.Router();
-const CarValuation = require('../models/CarValuation');
+const Car = require('../models/Car');
 
+// Function to calculate car valuation (dummy logic for example)
+const calculateValuation = (car) => {
+    const { brand, model, year, bodyType, transmission, fuel } = car;
+
+    // Your valuation calculation logic here
+    if (brand === "Toyota" && transmission === "Auto") {
+        return 5300000;
+    } else if (brand === "Toyota" && transmission === "Manual") {
+        return 5000000;
+    } else if (brand === "Nissan") {
+        return 3500000;
+    } else if (brand === "Mazda") {
+        return 3000000;
+    } else if (brand === "Suzuki" && model === "Alto") {
+        return 4800000;
+    } else if (brand === "Suzuki" && model === "WagonR") {
+        return 5200000;
+    } else {
+        return "Unknown valuation"; // Default value for other cases
+    }
+};
+
+// POST route to handle car valuation submissions
 router.post('/car-valuation', async (req, res) => {
     try {
-        const formData = req.body;
+        const { brand, model, year, bodyType, transmission, fuel } = req.body;
         
-        // Calculate valuation based on form data
-        const valuation = calculateValuation(formData);
+        // Calculate valuation
+        const valuation = calculateValuation({ brand, model, year, bodyType, transmission, fuel });
 
-        // Respond with the valuation
-        res.status(200).json({ valuation });
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({ message: 'Server error' });
+        // Create a new car object
+        const car = new Car({ brand, model, year, bodyType, transmission, fuel, valuation });
+
+        // Save the car object to the database
+        await car.save();
+
+        // Respond with the valuation value
+        res.status(201).json({ valuation });
+    } catch (error) {
+        console.error('Error handling car valuation:', error);
+        res.status(500).send('Internal Server Error');
     }
 });
-
-// Dummy calculation function for demonstration
-function calculateValuation(formData) {
-    // Implement your valuation algorithm here
-    return 5000; // Dummy value for demonstration
-}
 
 module.exports = router;
