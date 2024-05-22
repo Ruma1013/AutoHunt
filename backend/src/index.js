@@ -9,6 +9,7 @@ const cors = require('cors');
 const connection = require("./db");
 const userRoutes = require('./routes/users');
 const authRoutes = require('./routes/auth');
+const valuationRoutes = require('./routes/carValuationRoutes');
 
 // Connect to the database
 connection();
@@ -25,6 +26,7 @@ app.use(express.static(path.join(__dirname, '..', 'frontend', 'build')));
 // Use routes
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/carValuationRoutes",valuationRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {

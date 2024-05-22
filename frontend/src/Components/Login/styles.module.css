@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 
 .login_container {
 	width: 100%;
@@ -8,7 +8,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-family: montserrat,sans-serif;
+	font-family: poppins;
 }
 
 .login_form_container {
@@ -29,6 +29,19 @@
 	background-color: white;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
+}
+
+.left h1{
+	color: #454545;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.right h1{
+	color: white;
+    font-size: 55px;
+    font-weight: 500;
+
 }
 
 .form_container {
@@ -97,9 +110,17 @@
 	font-size: large;
 }
 
+.white_btn{
+	color: #454545;
+}
+
 .green_btn {
 	background-color: #1572D3;
 	color: white;
 	margin: 10px;
 	font-size: large;
+}
+
+.login_container{
+	margin-bottom: 50px;
 }
