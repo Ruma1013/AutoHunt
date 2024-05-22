@@ -1,0 +1,89 @@
+/* ProductDisplay.css */
+
+.productdisplay {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    margin-left: 170px; /* Adjust margin-left to match breadcrumb */
+    margin-right: 170px;
+    margin-bottom: 40px;
+}
+
+  
+  .productdisplay-thumbnails {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  .productdisplay-thumbnails img {
+    height: auto;
+    width: 200px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .productdisplay-main {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .main-image-container {
+    margin-right: 20px;
+  }
+  
+  .product-info h2 {
+    margin-top: 0;
+  }
+  
+  .product-info h4 {
+    margin-top: 0;
+  }
+  
+  .product-info img {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  
+  .product-info {
+    flex: 1;
+    text-align: justify;
+  }
+  
+  .product-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .product-info-row {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .product-info-row img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .dealer-info-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e6f7ff; /* Light blue background */
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .dealer-info-container h3 {
+    margin-top: 0;
+  }
+  
+  .dealer-image {
+    width: 100px; /* Adjust image width as needed */
+    border-radius: 50%; /* Make the image round */
+    margin-bottom: 10px;
+  }
+  
