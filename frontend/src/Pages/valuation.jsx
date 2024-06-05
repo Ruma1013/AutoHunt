@@ -1,33 +1,26 @@
 import React, { useState } from 'react';
-import CarForm from '../Components/CarForm/carform'; // Assuming you have created CarForm component
+import CarForm from '../Components/CarForm/carform'; // Ensure the correct path to CarForm
 import './CSS/valuation.css';
 
 const Valuation = () => {
-  // State for storing form data
-  const [formData, setFormData] = useState({
-    brand: '',
-    model: '',
-    year: '',
-    bodyType: '',
-    Transmission: '',
-    fuel: ''
-  });
+  const [valuation, setValuation] = useState(null);
 
-  // Function to handle form submission
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // You can handle form submission logic here, e.g., send data to backend
-    console.log(formData);
+  const handleValuationChange = (newValuation) => {
+    setValuation(newValuation);
   };
 
   return (
-    <div className="valuation-container">
-      
-      <form onSubmit={handleSubmit}>
-        <CarForm formData={formData} setFormData={setFormData} />
-        {/* Optionally, add a submit button */}
-        
-      </form>
+    <div className="car_form_container">
+      <div className="car_form_form_container">
+        <div className="left">
+          <CarForm setValuation={handleValuationChange} />
+        </div>
+        <div className="right">
+          <h1>Car <br/> Valuation</h1> 
+          {valuation && <div className="car-form-valuation">Estimated Valuation: <br/>
+          Rs {valuation}</div>}
+        </div>
+      </div>
     </div>
   );
 };

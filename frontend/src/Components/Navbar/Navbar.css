@@ -38,7 +38,7 @@
     background-color:blue;
 }
 
-.nav-login button{
+.nav-signup button{
     width: 157px;
     height: 58px;
     outline: none;
@@ -51,6 +51,6 @@
     cursor: pointer;
 }
 
-.nav-login button:active {
+.nav-signup button:active {
     background: #f3f3f3;
 }

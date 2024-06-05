@@ -1,10 +1,8 @@
-// LoginSignup.jsx
-
 import React, { useState } from 'react';
 import './CSS/LoginSignup.css';
-import axios from 'axios'; // Import Axios for making HTTP requests
+import axios from 'axios';
 
-const LoginSignup = () => {
+const Signup = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -13,37 +11,41 @@ const LoginSignup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      // Basic form validation
+      if (!name || !email || !password) {
+        throw new Error('All fields are required');
+      }
+
       // Make a POST request to your backend endpoint (/signup) with the form data
-      await axios.post('http://localhost:3000/signup', { name, email, password });
+      await axios.post('http://localhost:3000/api/signup', { name, email, password }); // Change the URL to '/api/signup'
       // Optionally, you can redirect the user to another page after successful signup.
     } catch (error) {
       console.error(error);
-      setError('Failed to sign up');
+      setError(error.response?.data?.message || 'Failed to sign up');
     }
   };
-  
 
   return (
-    <div className='loginsignup'>
-      <div className="loginsignup-container">
+    <div className='signup'>
+      <div className="signup-container">
        <h1>Sign Up</h1>
        <form onSubmit={handleSubmit}>
-         <div className="loginsignup-fields">
+         <div className="signup-fields">
             <input type="text" placeholder='Your Name' value={name} onChange={(e) => setName(e.target.value)} />
             <input type="email" placeholder='Email Address' value={email} onChange={(e) => setEmail(e.target.value)} />
             <input type="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
          </div>
          <button type="submit">Continue</button>
        </form>
-       <p className="loginsignup-login">Already have an account? <span>Login here</span></p>
-        <div className="loginsignup-agree">
+       <p className="signup-signup">Already have an account? <span>signup here</span></p>
+        <div className="signup-agree">
           <input type="checkbox" name='' id='' />
           <p>By continuing, I agree to the terms of use & Policy</p>
         </div>
-        {error && <p>{error}</p>}
+        {error && <p className="signup-error">{error}</p>}
       </div>
     </div>
   );
 };
 
-export default LoginSignup;
+export default Signup;
