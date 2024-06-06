@@ -1,280 +1,318 @@
-import img1 from '../Assets/Tesla_Model_Y_1X7A6211.jpg'
-import img2 from '../Assets/Honda.jpg';
-import img3 from '../Assets/Audi.jpg';
-import img4 from '../Assets/toyota.png';
-import img5 from '../Assets/BMW_F44_1X7A6109.jpg';
-import img6 from '../Assets/bmw.jpg';
-import img7 from '../Assets/Mercedes-Maybach_Z223_680_1X7A5831.jpg'
-import img8 from '../Assets/Mercedes-Benz_X296_1X7A6955.jpg';
-import img9 from '../Assets/x.png';
-import img10 from '../Assets/landRover.jpg';
-import img11 from '../Assets/Toyota_Mirai.jpg';
-import img12 from '../Assets/y.jpg';
-import img13 from '../Assets/Chevrolet Equinox LS.jpg'
-import img14 from '../Assets/Mini-Cooper-S-Clubman-main.jpg';
-import img15 from '../Assets/nissan_sentra_angularfront.jpg';
-import img16 from '../Assets/2019_Audi_Q3_S_Line_35_TFSi_1.5.jpg';
-import img17 from '../Assets/2018_Audi_S5_TFSi_Quattro_Automatic_3.0_Front.jpg';
+import img1 from '../Assets/allionfront.png'
+import img2 from '../Assets/allionint.png';
+import img3 from '../Assets/allionrear.png';
+import img4 from '../Assets/altofront.png';
+import img5 from '../Assets/altoint.jpeg';
+import img6 from '../Assets/altorear.png';
+import img7 from '../Assets/wagonrfront.jpg'
+import img8 from '../Assets/wagonrint.png';
+import img9 from '../Assets/wagonrrear.png';
+import img10 from '../Assets/kdhfront.png';
+import img11 from '../Assets/kdhint.png';
+import img12 from '../Assets/kdhrear.png';
+import img13 from '../Assets/pradofront.png'
+import img14 from '../Assets/pradorear.png';
+import img15 from '../Assets/pradoint.png';
+import img16 from '../Assets/monterofront.png';
+import img17 from '../Assets/monterorear.png';
+import img18 from '../Assets/monteroint.png';
+import img19 from '../Assets/premioffront.png';
+import img20 from '../Assets/premiorear.png';
+import img21 from '../Assets/premioint.png';
+import img22 from '../Assets/civicfront.png';
+import img23 from '../Assets/civicrear.png';
+import img24 from '../Assets/civicint.png';
+import img25 from '../Assets/clafront.jpg';
+import img26 from '../Assets/clarear.png';
+import img27 from '../Assets/claint.png';
+import img28 from '../Assets/lcfront.png';
+import img29 from '../Assets/lcreaar.png';
+import img30 from '../Assets/lcint.png';
+import img31 from '../Assets/hrvfront.png';
+import img32 from '../Assets/hrvrear.png';
+import img33 from '../Assets/hrvint.png';
+import img34 from '../Assets/priusfront.png';
+import img35 from '../Assets/priusrear.png';
+import img36 from '../Assets/priusint.png';
+import img37 from '../Assets/accordfront.png';
+import img38 from '../Assets/accordrear.png';
+import img39 from '../Assets/accordint.png';
+import img40 from '../Assets/rav4front.png';
+import img41 from '../Assets/rav4rear.png';
+import img42 from '../Assets/rav4int.png';
+import img43 from '../Assets/miragefront.png';
+import img44 from '../Assets/miragerear.png';
+import img45 from '../Assets/mirageint.png';
+import img46 from '../Assets/outlanderfront.png';
+import img47 from '../Assets/outlanderrear.png';
+import img48 from '../Assets/outlanderint.png';
+
+
+
+
+
+
+
 
 let all_product = [
     {
         id: 1,
-        name: "Tesla Model 3 Standard Range",
+        name: "Toyota Allion",
         category:"registered",
         images: img1, // Corrected path
-        subImages: [img1, img1, img1],
-        new_price: 5690,
-        old_price: 4987,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        subImages: [img1, img2, img3],
+        new_price: 14000000,
+        old_price: 14500000,
+        year: 2017,
+        drive: "Front-WheelDrive",
+        fuel: "Petrol",
         capacity: 5,
         image: img1,
-        phoneNumber: 1111111,
+        phoneNumber: 775558996,
         emailAddress: "rumandasenanayake@gmail.com",
-        description: "The Tesla Model 3 Standard Range is a sleek and efficient electric vehicle designed for urban commuters. With its rear-wheel drive and spacious interior, it offers a comfortable and eco-friendly driving experience",
+        description: "Allion is a good family car which has a good fuel effiency and a space with luxury",
     },
     {
         id: 2,
-        name: "Honda Pilot Touring 7-Passenger",
-        category:"Unregistered",
-        images: img2, // Corrected path
-        subImages: [img2, img2, img2],
-        new_price: 4375,
-        old_price: 4575,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        name: "Suzuki Alto",
+        category:"registered",
+        images: img4, // Corrected path
+        subImages: [img4, img5, img6],
+        new_price: 2800000,
+        old_price: 2900000,
+        year: 2015,
+        drive: "Front-WheelDrive",
+        fuel: "Petrol",
         capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
+        image: img4,
+        phoneNumber:775558996 ,
         emailAddress: "rumandasenanayake@gmail.com",
-        description: "The Honda Pilot Touring 7-Passenger is a spacious and versatile SUV ideal for families and adventurers alike. With its luxurious features and ample seating for seven passengers, it offers comfort and convenience on every journey.",
+        description: " Alto is a budjet car for a small family who looks for economy with a budjet range price",
     
     },
     {
         id: 3,
-        name: "Chevrolet Equinox LS",
-        category:"Unregistered",
-        images: img3, // Corrected path
-        subImages: [img3, img3, img3],
-        new_price: 1375,
-        old_price: 1575,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        name: "Suzuki Wagonr",
+        category:"registered",
+        images: img7, // Corrected path
+        subImages: [img7, img8, img9],
+        new_price: 6000000,
+        old_price: 6250000,
+        year: 2018,
+        drive: "Front-WheelDrive",
+        fuel: "Petrol",
         capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "The Chevrolet Equinox LS is a stylish and practical compact SUV perfect for urban driving and weekend getaways. With its sleek design and advanced features, it offers a comfortable ride and impressive fuel efficiency. Whether you're commuting to work or exploring the great outdoors, the Equinox LS is ready for any adventure.",
+        image: img7,
+        phoneNumber: 775558996,
+        description: "Wagonr is a good japanese city car which has plenty of space and good fuel consumption",
+    },
+    {
+        id: 4,
+        name: "Toyota Hiace",
+        category:"registered",
+        images: img10, // Corrected path
+        subImages: [img10, img11, img12],
+        new_price: 18000000,
+        old_price: 18200000,
+        year: 2015,
+        drive: "Rear-WheelDrive",
+        fuel: "Diesel",
+        capacity: 14,
+        image: img10,
+        phoneNumber: 775558996,
+        description: "Consist of 3000cc 1KD engine and has 14 seating Capacity. Ideal for tourism ",
     },
     {
         id: 5,
-        name: "BMW F44 1X7A6109",
+        name: "Totota Prado",
         category:"registered",
-        images: img5, // Corrected path
-        subImages: [img5, img5, img3],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
-        capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "The BMW F44 1X7A6109 combines luxury and performance in a sleek and sophisticated package. With its powerful engine and agile handling, this coupe delivers an exhilarating driving experience. Its premium interior features cutting-edge technology and superior comfort, making every journey a pleasure. ",
+        images: img13, // Corrected path
+        subImages: [img13, img14, img15],
+        new_price: 32000000,
+        old_price: 32500000,
+        year: 2015,
+        drive: "Four-WheelDrive",
+        fuel: "Diesel",
+        capacity: 7,
+        image: img13,
+        phoneNumber: 775558996,
+        description: "Prado is a luxury vehicle which is capable of offroading.Consits of 7 seats",
     },
     {
         id: 6,
-        name: "BMW F44 1X7A6109",
-        category:"Unregistered",
-        images: img8, // Corrected path
-        subImages: [img8, img8, img8],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
-        capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "In this modified component, I added a paragraph element (<p>{description}</p>) below the main image to display the product description. Adjust the styling in the CSS file (ProductDisplay.css) to ensure proper layout and alignment.",
+        name: "Mitshubishi Montero",
+        category:"registered",
+        images: img16, // Corrected path
+        subImages: [img16, img17, img18],
+        new_price: 25000000,
+        old_price: 25500000,
+        year: 2013,
+        drive: "Four-WheelDrive",
+        fuel: "Diesel",
+        capacity: 7,
+        image: img16,
+        phoneNumber: 775558996,
+        description: "Montero is a luxury vehicle with a powerful 4m41 engine which is capable of offroading",
     },
     {
         id: 7,
-        name: "Mercedes-Maybach Z223 680",
+        name: "Toyota Premio",
         category:"registered",
-        images: img7, // Corrected path
-        subImages: [img7, img7, img7],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        images: img19, // Corrected path
+        subImages: [img19, img20, img21],
+        new_price: 15500000,
+        old_price: 15700000,
+        year: 2018,
+        drive: "Front-WheelDrive",
+        fuel: "Petrol",
         capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "The Mercedes-Maybach Z223 680 is the epitome of luxury. With its elegant design, opulent interior, and powerful performance, this sedan offers an unmatched driving experience. Crafted with the finest materials and equipped with sophisticated features, it represents automotive excellence at its finest.",
+        image: img19,
+        phoneNumber: 775558996,
+        description: "Toyota premio is a luxury vehicle with a elegent design with economy",
     },
     {
         id: 8,
-        name: "Mercedes-Benz X296",
-        category:"Unregistered",
-        images: img6, // Corrected path
-        subImages: [img6, img6, img6],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        name: "Honda civic",
+        category:"registered",
+        images: img22, // Corrected path
+        subImages: [img22, img23, img24],
+        new_price: 4500000,
+        old_price: 4700000,
+        year: 2004,
+        drive: "Front-WheelDrive",
+        fuel: "Petrol",
         capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "The Mercedes-Benz X296 is a versatile and stylish SUV that combines luxury with practicality. With its sleek design, advanced technology, and powerful performance, it's the perfect vehicle for those who demand both comfort and capability. Whether navigating city streets or venturing off-road, the X296 delivers an exceptional driving experience.",
+        image: img22,
+        phoneNumber: 775558996,
+        description: "Honda civic is a reliable car which has a good driving pleasure",
     },
     {
         id: 9,
-        name: "2024 Kia Sorento SUV",
+        name: "Benz CLA200",
         category:"Unregistered",
-        images: img9, // Corrected path
-        subImages: [img9, img9, img9],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
+        images: img25, // Corrected path
+        subImages: [img25, img26, img27],
+        new_price: 25000000,
+        old_price: 25500000,
+        year: 2024,
         drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        fuel: "Petrol",
         capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "The 2024 Kia Sorento SUV is a blend of style, comfort, and performance. With its spacious interior, advanced safety features, and versatile design, it's ready to tackle any adventure. Whether you're cruising through city streets or exploring off the beaten path, the Sorento delivers a smooth and enjoyable ride for you and your passengers.",
+        image: img25,
+        phoneNumber: 775558996,
+        description: " The Mercedes-Benz CLA class is a series of luxury compact executive cars manufactured by Mercedes-Benz since 2013",
     },
     {
         id: 10,
-        name: "Land Rover Velar P250 R",
+        name: "Toyota Landcruiser LC300",
         category:"Unregistered",
-        images: img10, // Corrected path
-        subImages: [img10, img10, img10],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
-        capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "The Land Rover Velar P250 R is the epitome of luxury and performance. With its sleek design, powerful engine, and cutting-edge technology, it offers an unparalleled driving experience. Whether you're navigating city streets or tackling rugged terrain, the Velar delivers unmatched comfort, refinement, and capability.",
+        images: img28, // Corrected path
+        subImages: [img28, img29, img30],
+        new_price: 50000000,
+        old_price: 50000000,
+        year: 2024,
+        drive: "All-WheelDrive",
+        fuel: "Diesel",
+        capacity: 7,
+        image: img28,
+        phoneNumber: 775558996,
+        description: "In line with modern downsizing trends, the LC's erstwhile 4.5-litre V8 diesel makes way for a 3.3-litre twin-turbo V6 diesel, which makes more power and torque at 309hp and 700Nm, respectively.",
     },
     {
         id: 11,
-        name: "Toyota Mirai (JPD20)",
-        category:"registered",
-        images: img11, // Corrected path
-        subImages: [img11, img11, img11],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        name: "Honda HRV",
+        category:"Unregistered",
+        images: img31, // Corrected path
+        subImages: [img31, img32, img33],
+        new_price: 20000000,
+        old_price: 20000000,
+        year: 2023,
+        drive: "Front-WheelDrive",
+        fuel: "Petrol",
         capacity: 5,
         image: img1,
-        phoneNumber: 1111111,
-        description: "The Toyota Mirai (JPD20) is a groundbreaking hydrogen fuel cell vehicle that represents the future of sustainable transportation. With its innovative technology and zero-emission performance, the Mirai offers a clean and efficient driving experience. Experience the thrill of driving the Mirai while contributing to a greener, more sustainable future.",
+        phoneNumber: 775558996,
+        description: "The Honda HR-V is a subcompact crossover SUV (B-segment) manufactured and marketed by Honda over three generations. Honda HR-V. Honda HR-V (RV5).",
     },
     {
         id: 12,
-        name: "Chevrolet Equinox LS",
-        category:"registered",
-        images: img17, // Corrected path
-        subImages: [img17, img17, img17],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        name: "Toyota Prius",
+        category:"Unregistered",
+        images: img34, // Corrected path
+        subImages: [img34, img35, img36],
+        new_price: 21000000,
+        old_price: 21200000,
+        year: 2022,
+        drive: "Front-WheelDrive",
+        fuel: "Hybrid",
         capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "The Chevrolet Equinox LS is a reliable and versatile SUV designed for everyday adventures. With its spacious interior, advanced technology features, and smooth performance, the Equinox LS delivers comfort and convenience for both city driving and long road trips. Whether you're commuting to work or exploring new destinations, the Equinox LS is ready to take you there in style.",
+        image: img34,
+        phoneNumber: 775558996,
+        description: "The 2020 Toyota Prius has evolved from dullard to daring, with better fuel economy, better driving dynamics, and up to 196 horsepower.",
     },
     {
         id: 13,
-        name: "Chevrolet Equinox LS",
+        name: "Honda Accord ",
         category:"Unregistered",
-        images: img13, // Corrected path
-        subImages: [img13, img13, img13],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        images: img37, // Corrected path
+        subImages: [img37, img38, img39],
+        new_price: 22000000,
+        old_price: 22200000,
+        year: 2024,
+        drive: "front-WheelDrive",
+        fuel: "Petrol",
         capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "The Chevrolet Equinox LS offers a perfect blend of comfort, performance, and style. With its sleek design and powerful engine, this SUV is ready to conquer any road with confidence. Whether you're running errands around town or heading out on a weekend getaway, the Equinox LS provides ample space, advanced safety features, and intuitive technology to enhance your driving experience.",
+        image: img37,
+        phoneNumber: 775558996,
+        description: "Honda has a long-standing reputation for producing durable and dependable vehicles, and the Accord is no exception. Many owners report driving their Accords well beyond the 100,000-mile mark with minimal issues. ",
     },
     {
         id: 14,
-        name: "MINI Clubman-2019 ",
-        category:"registered",
-        images: img14, // Corrected path
-        subImages: [img14, img14, img14],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        name: "Toyota Rav4",
+        category:"Unregistered",
+        images: img40, // Corrected path
+        subImages: [img40, img41, img42],
+        new_price: 25000000,
+        old_price: 25000000,
+        year: 2023,
+        drive: "All-WheelDrive",
+        fuel: "Petrol",
         capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "The MINI Clubman 2019 is a stylish and compact car that packs a punch. With its iconic design and powerful performance, this registered vehicle is perfect for those who appreciate both style and substance. Whether you're navigating city streets or cruising on the highway, the Clubman delivers a smooth and responsive ride.",
+        image: img40,
+        phoneNumber: 775558996,
+        description: "The Toyota RAV4 vehicle rating for the 2024 model year rests at a good status and is a Top Safety Pick, a distinction it also enjoyed for the 2023 model year.",
     },
     {
         id: 15,
-        name: "Nissan sentra angularfront",
+        name: "Mitsubishi Mirage",
         category:"Unregistered",
-        images: img15, // Corrected path
-        subImages: [img15, img15, img15],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        images: img43, // Corrected path
+        subImages: [img43, img44, img45],
+        new_price: 5500000,
+        old_price: 5700000,
+        year: 2022,
+        drive: "front-WheelDrive",
+        fuel: "Petrol",
         capacity: 5,
         image: img1,
-        phoneNumber: 1111111,
-        description: "The Nissan Sentra Angularfront is a sleek and modern sedan designed to turn heads. With its bold lines and dynamic stance, this unregistered vehicle exudes confidence and style. Equipped with advanced technology and safety features, the Sentra offers a comfortable and secure driving experience.",
+        phoneNumber: 775558996,
+        description: "The new 2024 Mitsubishi Mirage is the compact hatchback that's a match for everyone. Explore the reliable and economical compact car that meets your budget . ",
     },
     {
         id: 16,
-        name: "2019 Audi Q3 S Line 35 TFSi",
+        name: "Mitsubshi Outlander",
         category:"registered",
-        images: img16, // Corrected path
-        subImages: [img16, img16, img16],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
+        images: img46, // Corrected path
+        subImages: [img46, img47, img48],
+        new_price: 23000000,
+        old_price: 23000000,
+        year: 2024,
+        drive: "All-WheelDrive",
+        fuel: "Plugin Hybrid",
         capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "The 2019 Audi Q3 S Line 35 TFSi is a premium compact SUV designed for those who value luxury and performance. With its sleek and sophisticated design, this registered vehicle makes a statement on the road. Equipped with advanced features and cutting-edge technology, the Audi Q3 offers a comfortable and exhilarating driving experience. ",
-    },
-    {
-        id: 17,
-        name: "2018 Audi S5 TFSi Quattro Automatic",
-        category:"registered",
-        images: img12, // Corrected path
-        subImages: [img12, img12, img12],
-        new_price: 71415,
-        old_price: 15755,
-        year: 2019,
-        drive: "Rear-WheelDrive",
-        fuel: "Electric",
-        capacity: 5,
-        image: img1,
-        phoneNumber: 1111111,
-        description: "The 2018 Audi S5 TFSi Quattro Automatic is a high-performance coupe that exudes style and sophistication. As a registered vehicle, it combines luxury with powerful performance, making it an ideal choice for those who seek both elegance and exhilaration on the road.",
+        image: img46,
+        phoneNumber: 775558996,
+        description: "The Mitsubishi Outlander is a compact crossover SUV manufactured by Japanese automaker Mitsubishi Motors since 2001. ",
     },
     // Other products...
 ];

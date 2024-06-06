@@ -1,55 +1,53 @@
-
-
 .popular-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    gap: 10px;
-    height: 120vh;
-  }
-  
-  .popular {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-image: url('../Assets/Vector.png');
-    background-position: left bottom;
-    background-repeat: no-repeat;
-   
-  }
-  
-  .popular-content {
-    position: relative;
-    z-index: 1;
-    text-align: center; /* Center text horizontally */
-  }
-  
-  .popular h1 {
-    color: #171717;
-    font-size: 50px;
-    font-weight: 600;
-  }
-  
-  .popular hr {
-    width: 200px;
-    height: 6px;
-    border-radius: 10px;
-    background: #252525;
-  }
-  
-  .popular-item {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    gap: 30px;
-  }
-  
-  .popular-item-container {
-    border: 2px solid #ccc; /* Border style for each image box */
-    border-radius: 8px; /* Border radius for each image box */
-    padding: 10px; /* Padding inside each image box */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  gap: 10px;
+  height: 120vh;
+}
 
-  }
-  
+.popular {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('../Assets/Vector.png');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.popular-content {
+  position: relative;
+  z-index: 1;
+  text-align: center; /* Center text horizontally */
+}
+
+.popular h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.popular hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.popular-item {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 30px;
+}
+
+.popular-item-container {
+  border: 2px solid #ccc; /* Border style for each image box */
+  border-radius: 8px; /* Border radius for each image box */
+  padding: 10px; /* Padding inside each image box */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
