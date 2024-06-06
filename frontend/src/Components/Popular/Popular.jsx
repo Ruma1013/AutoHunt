@@ -13,14 +13,14 @@ const Popular = () => {
           <div className="popular-item">
             {data_product.slice(0, 3).map((item, i) => (
               <div key={i} className="popular-item-container">
-                <Item id={item.id} name={item.name} images={item.images} />
+                <Item id={item.id} images={item.images} />
               </div>
             ))}
           </div>
           <div className="popular-item">
             {data_product.slice(3).map((item, i) => (
               <div key={i} className="popular-item-container">
-                <Item id={item.id} name={item.name} images={item.images} />
+                <Item id={item.id} images={item.images} />
               </div>
             ))}
           </div>
