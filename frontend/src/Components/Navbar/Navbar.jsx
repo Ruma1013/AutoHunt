@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png';
 import { Link } from 'react-router-dom';
+
 const Navbar = () => {
 
 const [isLoggedIn, setIsLoggedIn] = useState(false); // State to manage authentication
